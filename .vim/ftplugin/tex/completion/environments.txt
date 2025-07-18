@@ -1,0 +1,15 @@
+itemize
+enumerate
+center
+figure
+table
+tabular
+equation
+align
+array
+minipage
+flushleft
+flushright
+exercise
+document
+multicols
