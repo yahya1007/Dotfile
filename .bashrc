@@ -95,3 +95,12 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+#Clean arch linux
+#1 pacman cache
+alias cln='doas pacman -Sc'
+alias clna='doas pacman -Scc'
+#2 Unused packages
+alias unused='doas pacman -Qdtq'
+alias clnu='doas pacman -R $(unused)'
+alias clnc='rm -rf ~/.cache/*'
+alias clnt='rm -rf ~/Trash/'
